@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 
 <head>
     <style>
@@ -34,6 +34,89 @@
             {{ input_text }} <br /> <br />
             <label for="text"><b>Genres</b></label> <br />
             {{ output_text }}
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Genre Classifier - Result</title>
+    <style>
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGKA61KGfMwVSl20bqpk8J4dRt1RPM294FgHLXYsfEpbzTid2y1Yk8mlmpuQMfMcKdNc&usqp=CAU') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            height: 5ch;
+            background-color: rgba(14, 14, 15, 0.8); /* Add a semi-transparent green background */
+            color: #fff;
+            margin: 0;
+            width: 100%;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            font-size: 25px;
+            width: 100%;
+        }
+
+        .result-container {
+            width: 80%;
+            background-color: rgb(255, 255, 255); /* Change to fully opaque white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #text,
+        #genres {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #f81616ef; /* Change the color of the input text */
+            font-weight: bold; /* Make both text bold */
+        }
+
+        #genres {
+            color: #f86d04; /* Change the color of the genres text */
+            font-style: italic; /* Make genres text italic */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head" style="color: #0bf02d;"><b>Quotations Genre Classifier - Result</b></div>
+    <div class="center">
+        <div class="result-container">
+            <label for="text"><b>QUOTATION</b></label>
+            <p id="text">{{ input_text }}</p>
+            <label for="genres"><b>GENRES</b></label>
+            <p id="genres">{{ output_text }}</p>
         </div>
     </div>
 </body>
