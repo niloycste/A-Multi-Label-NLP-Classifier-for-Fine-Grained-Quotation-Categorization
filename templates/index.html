@@ -1,27 +1,41 @@
-<html>
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Genre Classifier</title>
     <style>
+        body {
+            background-color:#dbdddea5;
+            font-family: Arial, sans-serif;
+        }
+
         .head {
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 30px;
             height: 5ch;
+            background-color: #216c9ea5;
+            color: #fff;
+            margin: 0;
         }
 
         .center {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 70vh;
             font-size: 25px;
         }
 
         form {
-            height: 500px;
-            width: 1000px;
-            background-color: rgb(155, 226, 122);
+            background: url('https://images.unsplash.com/photo-1567219934540-9f75f7b87552?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cXVvdGVzfGVufDB8fDB8fHww') no-repeat center center fixed;
+            height: 400px;
+            width: 600px;
+            background-color: #8f8c8c0e;
             padding: 20px;
             border-radius: 10px;
             display: flex;
@@ -32,28 +46,27 @@
 
         #text {
             height: 100px;
-            width: 500px;
-            font-size: 20px;
-        }
-
-        textarea {
-            height: 500px;
-            width: 500px;
+            width: 400px;
             font-size: 20px;
         }
 
         input {
             font-size: 20px;
             padding: 10px;
+            background-color: #764b01d7;
+            color: #fff;
+            border: none;
+            cursor: pointer;
         }
     </style>
-    <div class="head"><b>Quotation Genre Classifier</b></div>
 </head>
 
 <body>
+    <div class="head"><b>Quotations Genre Classifier</b></div>
     <div class="center">
         <form action="/" method="post">
-            <label for="text"><b>Enter Quotation</b></label> <br />
+            <label for="text" style="color: #fbfafa;"><b>Enter Quotation</b></label> <br />
+
             <textarea id="text" name="text"></textarea> <br />
             <input type="submit" value="Submit">
         </form>
