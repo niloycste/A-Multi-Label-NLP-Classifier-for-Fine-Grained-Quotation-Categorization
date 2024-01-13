@@ -36,3 +36,5 @@ I use a **`distilrobera-base`** model for finetuning from HuggingFace Transforme
 ## Model Compression and ONNX Inference
 The trained model takes up 313 MB of memory. I managed to shrink it down to around 78 MB by compressing it using ONNX quantization. You can check out the smaller file from 
 [here](book-classifier-quantized.onnx) and you can access the main trained model using this [link](https://drive.google.com/file/d/1csI9EcKei1MIPdZJwSXsRK69HnfQLo3n/view?usp=sharing). Anyone interested to see the onxx code can access this from [here](Notebook) named **`onnx_inference_.ipynb`**
+## Model Deployment in HuggingFace:
+The model is now live on the HuggingFace Spaces Gradio App. You can explore the implementation in the deployment folder. Access the Hugging Face Spaces link [here](https://huggingface.co/spaces/niloycste68/Multi-Label-Quotes-Classifier)
