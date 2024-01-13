@@ -21,6 +21,10 @@ The dataset used for training this model was obtained by scraping quotes from th
 - Happiness Quotes
 - Hope Quotes
 - Faith Quotes
+- Success Quotes
+-Life Quotes Quotes 
+-Time Quotes 
+-Motivation Quotes etc.
 
 In total, approximately 38,611 quotes were collected. The dataset consists of three main columns: author name, quotation text, and genres.
 
