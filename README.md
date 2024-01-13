@@ -40,3 +40,7 @@ The trained model takes up 313 MB of memory. I managed to shrink it down to arou
 The model is now live on the HuggingFace Spaces Gradio App. You can explore the implementation in the deployment folder. Access the Hugging Face Spaces link [here](https://huggingface.co/spaces/niloycste68/Multi-Label-Quotes-Classifier)<br/>
 <img src = "Deployment/huggingface.png" width="1200" height="400">
 
+## Web Deployment
+I set up a Flask App that takes in quotes and shows their genres as output. Find all the necessary files in the Flask branch on GitHub. You can try out the live website [here](https://multilabel-quotation-genre-classifier.onrender.com/)<br/>
+<img src = "Deployment/flask-01.png" width="1200" height="400"><br/>
+<img src = "Deployment/flask-02.png" width="1200" height="400">
