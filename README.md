@@ -26,5 +26,5 @@ The dataset used for training this model was obtained by scraping quotes from th
 -Time Quotes 
 -Motivation Quotes etc.
 
-In total, approximately 38,611 quotes were collected. The dataset consists of three main columns: author name, quotation text, and genres.
+In total, approximately 38,611 quotes were collected. The dataset consists of three main columns: author name, quotation text, and genres. the data are stored in **`Dataset/dataquotes.csv`**.
 
