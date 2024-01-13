@@ -32,7 +32,7 @@ In total, approximately 38,611 quotes were collected. The dataset consists of th
 At first, there were 23,415 different kinds of genres in the dataset. After looking closely, I noticed many of them were rare, so I got rid of those uncommon ones. In the end, I settled on 138 genres. Also, I removed some quotes that didn't have any genre assigned, leaving me with a total of 38,607 data points.The preprocessing can be found in **`Notebook/NLP_Multilabel_Classification.ipynb`**.
 
 ## Model Training
-I use a distilrobera-base model for finetuning from HuggingFace Transformers using Fastai and Blurr. The training happened in three stages, and I picked the best model with an accuracy of **97.8%** for deployment. You can check out the notebook for training [here](Notebook).
+I use a **`distilrobera-base`** model for finetuning from HuggingFace Transformers using Fastai and Blurr. The training happened in three stages, and I picked the best model with an accuracy of **97.8%** for deployment. You can check out the notebook for training [here](Notebook).
 ## Model Compression and ONNX Inference
 The trained model takes up 313 MB of memory. I managed to shrink it down to around 78 MB by compressing it using ONNX quantization. You can check out the smaller file from 
-[here](book-classifier-quantized.onnx) and you can access the main trained model using this [link](https://drive.google.com/file/d/1csI9EcKei1MIPdZJwSXsRK69HnfQLo3n/view?usp=sharing). 
+[here](book-classifier-quantized.onnx) and you can access the main trained model using this [link](https://drive.google.com/file/d/1csI9EcKei1MIPdZJwSXsRK69HnfQLo3n/view?usp=sharing). Anyone interested to see the onxx code can access this from [here](Notebook) named **`onnx_inference_.ipynb`**
