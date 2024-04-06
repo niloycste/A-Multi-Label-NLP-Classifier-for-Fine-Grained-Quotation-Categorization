@@ -13,6 +13,7 @@ The dataset used for training this model was obtained by scraping quotes from th
 - Philosophy Quotes
 - Inspirational Quotes Quotes
 - God Quotes
+- Motivational Quotes
 - Truth Quotes
 - Wisdom Quotes
 - Romance Quotes
