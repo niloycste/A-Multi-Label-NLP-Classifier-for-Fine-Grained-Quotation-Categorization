@@ -13,7 +13,7 @@ tags = list(encode_tag_types.keys())
 
 inf_session = rt.InferenceSession('book-classifier-quantized.onnx')
 input_name = inf_session.get_inputs()[0].name
-output_name = inf_session.get_outputs()[0].name
+output_name = inf_session.get_outputs()[0].name  
 
 def classify_book_genre(quotes):
     input_ids = tokenizer(quotes)['input_ids'][:512]
